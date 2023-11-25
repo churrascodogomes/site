@@ -25,7 +25,7 @@ cardapio.eventos = {
 cardapio.metodos = {
 
     // obtem a lista de itens do cardápio
-    obterItensCardapio: (categoria = 'burgers', vermais = false) => {
+    obterItensCardapio: (categoria = 'churrasco', vermais = false) => {
 
         var filtro = MENU[categoria];
         console.log(filtro);
@@ -39,6 +39,7 @@ cardapio.metodos = {
 
             let temp = cardapio.templates.item.replace(/\${img}/g, e.img)
             .replace(/\${nome}/g, e.name)
+            .replace(/\${dsc}/g, e.dsc)
             .replace(/\${preco}/g, e.price.toFixed(2).replace('.', ','))
             .replace(/\${id}/g, e.id)
 
@@ -243,6 +244,7 @@ cardapio.metodos = {
 
                 let temp = cardapio.templates.itemCarrinho.replace(/\${img}/g, e.img)
                 .replace(/\${nome}/g, e.name)
+                .replace(/\${dsc}/g, e.dsc)
                 .replace(/\${preco}/g, e.price.toFixed(2).replace('.', ','))
                 .replace(/\${id}/g, e.id)
                 .replace(/\${qntd}/g, e.qntd)
@@ -466,6 +468,7 @@ cardapio.metodos = {
 
             let temp = cardapio.templates.itemResumo.replace(/\${img}/g, e.img)
                 .replace(/\${nome}/g, e.name)
+                .replace(/\${dsc}/g, e.dsc)
                 .replace(/\${preco}/g, e.price.toFixed(2).replace('.', ','))
                 .replace(/\${qntd}/g, e.qntd)
 
@@ -584,6 +587,10 @@ cardapio.templates = {
                 <p class="title-produto text-center mt-4">
                     <b>\${nome}</b>
                 </p>
+                <p class="dsc-produto text-center mt-4">
+                <b>\${dsc}</b>
+            </p>
+                                              
                 <p class="price-produto text-center">
                     <b>R$ \${preco}</b>
                 </p>
@@ -605,6 +612,7 @@ cardapio.templates = {
             <div class="dados-produto">
                 <p class="title-produto"><b>\${nome}</b></p>
                 <p class="price-produto"><b>R$ \${preco}</b></p>
+                <p class="dsc-produto"><b>\${dsc}</b></p>
             </div>
             <div class="add-carrinho">
                 <span class="btn-menos" onclick="cardapio.metodos.diminuirQuantidadeCarrinho('\${id}')"><i class="fas fa-minus"></i></span>
