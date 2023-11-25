@@ -25,6 +25,7 @@
             <div class="badge-total-carrinho">0</div>
             <i class="fa fa-shopping-bag"></i>
         </a>
+        
 
         <section class="header">
             <div class="container">
@@ -50,7 +51,8 @@
                             </li>
                             <li class="nav-item">
                                 <a href="#depoimentos" class="nav-link"><b>Depoimentos</b></a>
-                            </li>
+                           
+                            
                         </ul>
                         <a class="btn btn-white btn-icon wow fadeIn" onclick="cardapio.metodos.abrirCarrinho(true)">
                             Meu carrinho <span class="icon">
@@ -70,11 +72,11 @@
                         <div class="d-flex text-banner">
                             <h1 class="wow fadeInLeft"><b>Escolha sua comida <b class="color-primary">favorita.</b></b></h1>
                             <p class="wow fadeInLeft delay-02s">
-                                Aproveite nosso cardápio! Escolha o que desejar e recebe em sua casa de forma rápida e segura.
+                                Crie sua conta. É rápido, é gratis! Assim, você receberá notificações de sorteios e descontos imperdíveis.    
                             </p>
                             <div class="wow fadeIn delay-05s">
-                                <a class="btn btn-yellow mt-4 mr-3">
-                                    Ver cardápio
+                                <a href="login.html" target="_blank" class="btn btn-yellow mt-4 mr-3">
+                                    Cadastrar-se
                                 </a>
                                 <a href="#" class="btn btn-white btn-icon-left mt-4" id="btnLigar">
                                     <span class="icon-left">
@@ -111,7 +113,11 @@
                     </div>
                 </div>
             </div>
+
+            
         </section>
+
+        
 
         <section class="servicos" id="servicos">
 
@@ -181,25 +187,27 @@
                         </h1>
                     </div>
 
-                    <div class="col-12 col-one container-menu wow fadeInUp">
-                        <a id="menu-burgers" class="btn btn-white btn-sm mr-3 active" onclick="cardapio.metodos.obterItensCardapio('burgers')">
+                    <div class="col-12 col-one text-center container-menu wow fadeInUp">
+                        <!-- <a id="menu-burgers" class="btn btn-white btn-sm mr-3 active" onclick="cardapio.metodos.obterItensCardapio('burgers')">
                             <i class="fas fa-hamburger"></i>&nbsp; Burgers
-                        </a>
-                        <a id="menu-pizzas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('pizzas')">
-                            <i class="fas fa-pizza-slice"></i>&nbsp; Pizzas
-                        </a>
+                        </a> -->
+                        
                         <a id="menu-churrasco" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('churrasco')">
                             <i class="fas fa-drumstick-bite"></i>&nbsp; Churrasco
                         </a>
-                        <a id="menu-steaks" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('steaks')">
+                        <!-- <a id="menu-steaks" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('steaks')">
                             <i class="fas fa-bacon"></i>&nbsp; Steaks
-                        </a>
-                        <a id="menu-bebidas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('bebidas')">
-                            <i class="fas fa-cocktail"></i>&nbsp; Bebidas
+                        </a> -->
+                        <a id="menu-pizzas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('pizzas')">
+                            <i class="fas fa-pizza-slice"></i>&nbsp; Salgados
                         </a>
                         <a id="menu-sobremesas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('sobremesas')">
                             <i class="fas fa-ice-cream"></i>&nbsp; Sobremesas
                         </a>
+                        <a id="menu-bebidas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('bebidas')">
+                            <i class="fas fa-cocktail"></i>&nbsp; Bebidas
+                        </a>
+                        
                     </div>
 
                     <div class="col-12 col-one">
@@ -324,6 +332,7 @@
                 </div>
             </div>
         </section>
+        
 
         <section class="reserva" id="reservas">
             <div class="container">
@@ -365,6 +374,8 @@
             </div>
         </section>
 
+                
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -394,6 +405,7 @@
                 </div>
             </div>
         </footer>
+
 
 
         <div class="modal-full animated fadeIn hidden" id="modalCarrinho">
@@ -433,8 +445,8 @@
                             </div>
                         </div>
 
+                        
                         <div class="col-8 no-mobile"></div>
-
                         <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label>Endereço:</label>
@@ -474,34 +486,9 @@
                             <div class="form-group">
                                 <label>UF:</label>
                                 <select id="ddlUf" class="form-control">
-                                    <option value="-1">...</option>
-                                    <option value="AC">AC</option>
-                                    <option value="AL">AL</option>
-                                    <option value="AP">AP</option>
-                                    <option value="AM">AM</option>
-                                    <option value="BA">BA</option>
-                                    <option value="CE">CE</option>
-                                    <option value="DF">DF</option>
-                                    <option value="ES">ES</option>
-                                    <option value="GO">GO</option>
-                                    <option value="MA">MA</option>
-                                    <option value="MT">MT</option>
-                                    <option value="MS">MS</option>
-                                    <option value="MG">MG</option>
+                                   
                                     <option value="PA">PA</option>
-                                    <option value="PB">PB</option>
-                                    <option value="PR">PR</option>
-                                    <option value="PE">PE</option>
-                                    <option value="PI">PI</option>
-                                    <option value="RJ">RJ</option>
-                                    <option value="RN">RN</option>
-                                    <option value="RS">RS</option>
-                                    <option value="RO">RO</option>
-                                    <option value="RR">RR</option>
-                                    <option value="SC">SC</option>
-                                    <option value="SP">SP</option>
-                                    <option value="SE">SE</option>
-                                    <option value="TO">TO</option>
+                                   
                                 </select>
                             </div>
                         </div>
@@ -577,9 +564,16 @@
 
                 </div>
             </div>
-
-
         </div>
+
+        <input type="checkbox" id="checkbox" class="checkbox-hidden">
+
+
+       
+
+      
+      
+        
 
 
         <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
