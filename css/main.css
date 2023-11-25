@@ -248,7 +248,8 @@ a.navbar-brand {
 }
 
 .card-item {
-    height: 360px;
+    height: 420px;
+    width: 220px;
 }
 
 .card-item .img-produto img {
@@ -263,11 +264,17 @@ a.navbar-brand {
     overflow: hidden;
     height: 40px;
     margin-bottom: 0px;
+    font-size: 20px;
 }
 
 .card-item .price-produto {
     color: var(--color-primary);
-    font-size: 24px;
+    font-size: 20px;
+}
+
+.card-item .dsc-produto {
+    color: var(--color-green);
+    font-size: 16px;
 }
 
 .card-item .add-carrinho {
@@ -573,7 +580,7 @@ footer {
 
 .modal-full .title-produto {
     color: var(--color-black);
-    font-size: 20px;
+    font-size: 18px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -702,6 +709,7 @@ select.form-control {
     color: var(--color-black);
 }
 
+
 .cidade-endereco {
     margin-bottom: 0;
 }
@@ -780,3 +788,5 @@ select.form-control {
     border-radius: 50px;
     margin-bottom: 10px;
 }
+
+    
