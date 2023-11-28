@@ -89,21 +89,21 @@ var MENU = {
         {
             "id": "the-gramercy-tavern-burger-4-pack",
             "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
-            "name": "Gramercy Tavern",
+            "name": "Cheese Burguer: pão, carne 180g, queijo prato, salada, maionese aioli; acompanha batata frita.",
             "dsc": "The Gramercy Tavern Burger - 4 Pack",
             "price": 99
         },
         {
             "id": "shake-shack-shackburger-8-pack",
             "img": "./img/cardapio/burguers/shake-shack-shackburger-8-pack.973a5e26836ea86d7e86a327becea2b0.jpg",
-            "name": "Shake Shack",
+            "name": "Cheese Burguer: pão, carne 180g, queijo prato, salada, maionese aioli; acompanha batata frita.",
             "dsc": "Shake Shack ShackBurger® - 8 Pack",
             "price": 49
         },
         {
             "id": "gotts-cheeseburger-kit-for-4",
             "img": "./img/cardapio/burguers/gotts-complete-cheeseburger-kit-for-4.7bdc74104b193427b3fe6eae39e05b5e.jpg",
-            "name": "Gott's Roadside",
+            "name": "Cheese Burguer: pão, carne 180g, queijo prato, salada, maionese aioli; acompanha batata frita.",
             "dsc": "Gott's Complete Cheeseburger Kit for 4",
             "price": 99
         },
@@ -111,14 +111,14 @@ var MENU = {
             "id": "le-big-matt-kit-for-6",
             "img": "./img/cardapio/burguers/le-big-matt-kit-for-6.1ddae6e382bb3218eeb0fd5247de115a.jpg",
             "name": "Emmy Squared",
-            "dsc": "Le Big Matt Burger Kit for 6",
+            "dsc": "Cheese Burguer: pão, carne 180g, queijo prato, salada, maionese aioli; acompanha batata frita.",
             "price": 99
         },
         {
             "id": "shake-shack-shackburger-16-pack",
             "img": "./img/cardapio/burguers/shake-shack-shackburger-16-pack.316f8b09144db65931ea29e34869287a.jpg",
             "name": "Shake Shack",
-            "dsc": "Shake Shack Shackburger® - 16 Pack",
+            "dsc": "Cheese Burguer: pão, carne 180g, queijo prato, salada, maionese aioli; acompanha batata frita. - 16 Pack",
             "price": 89
         },
         {

@@ -8,9 +8,9 @@ var MEU_CARRINHO = [];
 var MEU_ENDERECO = null;
 
 var VALOR_CARRINHO = 0;
-var VALOR_ENTREGA = 5;
+var VALOR_ENTREGA = 7.5;
 
-var CELULAR_EMPRESA = '5591988602118';
+var CELULAR_EMPRESA = '5517991234567';
 
 cardapio.eventos = {
 
@@ -25,7 +25,7 @@ cardapio.eventos = {
 cardapio.metodos = {
 
     // obtem a lista de itens do cardápio
-    obterItensCardapio: (categoria = 'churrasco', vermais = false) => {
+    obterItensCardapio: (categoria = 'burgers', vermais = false) => {
 
         var filtro = MENU[categoria];
         console.log(filtro);
@@ -39,7 +39,6 @@ cardapio.metodos = {
 
             let temp = cardapio.templates.item.replace(/\${img}/g, e.img)
             .replace(/\${nome}/g, e.name)
-            .replace(/\${dsc}/g, e.dsc)
             .replace(/\${preco}/g, e.price.toFixed(2).replace('.', ','))
             .replace(/\${id}/g, e.id)
 
@@ -244,7 +243,6 @@ cardapio.metodos = {
 
                 let temp = cardapio.templates.itemCarrinho.replace(/\${img}/g, e.img)
                 .replace(/\${nome}/g, e.name)
-                .replace(/\${dsc}/g, e.dsc)
                 .replace(/\${preco}/g, e.price.toFixed(2).replace('.', ','))
                 .replace(/\${id}/g, e.id)
                 .replace(/\${qntd}/g, e.qntd)
@@ -468,7 +466,6 @@ cardapio.metodos = {
 
             let temp = cardapio.templates.itemResumo.replace(/\${img}/g, e.img)
                 .replace(/\${nome}/g, e.name)
-                .replace(/\${dsc}/g, e.dsc)
                 .replace(/\${preco}/g, e.price.toFixed(2).replace('.', ','))
                 .replace(/\${qntd}/g, e.qntd)
 
@@ -579,19 +576,15 @@ cardapio.metodos = {
 cardapio.templates = {
 
     item: `
-        <div class="col-12  col-sm-6 mb-5 animated fadeInUp">
+        <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-5 animated fadeInUp">
             <div class="card card-item" id="\${id}">
                 <div class="img-produto">
                     <img src="\${img}" />
                 </div>
-                <p class="title-produto text-left mt-4">
+                <p class="title-produto text-center mt-4">
                     <b>\${nome}</b>
                 </p>
-                <p class="dsc-produto text-left mt-4">
-                <b>\${dsc}</b>
-            </p>
-                                              
-                <p class="price-produto text-left">
+                <p class="price-produto text-center">
                     <b>R$ \${preco}</b>
                 </p>
                 <div class="add-carrinho">
@@ -612,7 +605,6 @@ cardapio.templates = {
             <div class="dados-produto">
                 <p class="title-produto"><b>\${nome}</b></p>
                 <p class="price-produto"><b>R$ \${preco}</b></p>
-                <p class="dsc-produto"><b>\${dsc}</b></p>
             </div>
             <div class="add-carrinho">
                 <span class="btn-menos" onclick="cardapio.metodos.diminuirQuantidadeCarrinho('\${id}')"><i class="fas fa-minus"></i></span>

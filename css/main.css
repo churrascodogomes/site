@@ -247,36 +247,31 @@ a.navbar-brand {
     margin-bottom: 40px;
 }
 
-/* .card-item {
-    height: 200px;
-    width: 800px;
-    margin-left: 150px;
-}  */
+.card-item {
+    height: 380px;
+}
 
 .card-item .img-produto img {
-    width: 22%;
+    width: 100%;
     border-radius: 11px;
 }
 
 .card-item .title-produto {
-    color: var(--color-black);
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    height: 100%;
-    margin-top: 100%;
-    margin-bottom: 0px; 
-    font-size: 20px;
+    /* color: var(--color-black); */
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    margin-top: 5px!important;
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 14px;
+    text-align: justify!important;
 }
 
 .card-item .price-produto {
     color: var(--color-primary);
-    font-size: 22px;
-}
-
-.card-item .dsc-produto {
-    color: var(--color-green);
     font-size: 18px;
+    padding: 22px;
 }
 
 .card-item .add-carrinho {
@@ -582,7 +577,7 @@ footer {
 
 .modal-full .title-produto {
     color: var(--color-black);
-    font-size: 18px;
+    font-size: 20px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -711,7 +706,6 @@ select.form-control {
     color: var(--color-black);
 }
 
-
 .cidade-endereco {
     margin-bottom: 0;
 }
@@ -790,5 +784,3 @@ select.form-control {
     border-radius: 50px;
     margin-bottom: 10px;
 }
-
-    
